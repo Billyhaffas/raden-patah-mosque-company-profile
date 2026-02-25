@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beranda - Masjid Raden Patah</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#1E3A8A",
+        accent: "#F59E0B"
+      }
+    }
+  }
+}
+</script>
+</head>
+
+<body class="bg-slate-100">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10 bg-primary rounded-lg"></div>
+    </div>
+
+    <!-- Menu -->
+    <div class="hidden md:flex space-x-8 font-medium text-gray-700">
+      <a href="#" class="text-primary border-b-2 border-primary pb-1">Beranda</a>
+      <a href="#" class="hover:text-primary">Ruangan</a>
+      <a href="#" class="hover:text-primary">Alur Peminjaman</a>
+      <a href="#" class="hover:text-primary">SOP</a>
+    </div>
+
+    <!-- Right -->
+    <div class="flex items-center space-x-6">
+      <a href="#" class="text-gray-700 hover:text-primary font-medium">
+        Status Pengajuan
+      </a>
+
+      <button class="relative text-xl">
+        🔔
+        <span class="absolute -top-1 -right-2 bg-red-500 text-white text-xs rounded-full px-1">
+          2
+        </span>
+      </button>
+
+      <div class="flex items-center space-x-2">
+        <span class="font-medium">Billy Haffas</span>
+        <div class="w-9 h-9 bg-gray-300 rounded-full"></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="relative h-[500px] bg-cover bg-center"
+style="background-image: url('https://images.unsplash.com/photo-1584515933487-779824d29309');">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-blue-900/70"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center text-white">
+    <div class="max-w-xl">
+      <h1 class="text-5xl font-bold mb-6">
+        Produk Islami
+      </h1>
+
+      <p class="text-gray-200 mb-6">
+        Masjid Raden Patah menyediakan berbagai kebutuhan islami seperti kurma,
+        sarung, kopiah, mukena, sajadah dan perlengkapan ibadah lainnya.
+      </p>
+
+      <a href="#produk"
+         class="bg-accent hover:bg-orange-600 px-6 py-3 rounded-lg font-semibold">
+        Belanja Sekarang
+      </a>
+    </div>
+  </div>
+
+  <!-- Decorative bottom gradient -->
+  <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-slate-100 to-transparent"></div>
+</section>
+
+
+<!-- ================= PRODUK CAROUSEL ================= -->
+<section id="produk" class="max-w-7xl mx-auto px-16 py-16 relative">
+
+  <h2 class="text-3xl font-bold text-gray-800 mb-10">
+    Produk Terbaru
+  </h2>
+
+  <div class="relative">
+
+    <!-- CONTAINER CARD -->
+    <div class="overflow-hidden">
+      <div id="carousel"
+        class="flex transition-transform duration-500 ease-in-out">
+
+        <!-- ================= SLIDE 1 ================= -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 min-w-full">
+
+          <!-- 4 PRODUCT SAJA -->
+          <div class="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
+            <img src="https://picsum.photos/400?1" class="h-44 w-full object-cover">
+            <div class="p-5">
+              <h3 class="font-semibold mb-2">Kurma Ajwa</h3>
+              <p class="text-green-700 font-bold mb-3">Rp 95.000</p>
+              <a href="#" class="block text-center bg-green-600 text-white py-2 rounded-lg">Beli</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
+            <img src="https://picsum.photos/400?2" class="h-44 w-full object-cover">
+            <div class="p-5">
+              <h3 class="font-semibold mb-2">Sarung Premium</h3>
+              <p class="text-green-700 font-bold mb-3">Rp 150.000</p>
+              <a href="#" class="block text-center bg-green-600 text-white py-2 rounded-lg">Beli</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
+            <img src="https://picsum.photos/400?3" class="h-44 w-full object-cover">
+            <div class="p-5">
+              <h3 class="font-semibold mb-2">Kopiah</h3>
+              <p class="text-green-700 font-bold mb-3">Rp 75.000</p>
+              <a href="#" class="block text-center bg-green-600 text-white py-2 rounded-lg">Beli</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
+            <img src="https://picsum.photos/400?4" class="h-44 w-full object-cover">
+            <div class="p-5">
+              <h3 class="font-semibold mb-2">Mukena Travel</h3>
+              <p class="text-green-700 font-bold mb-3">Rp 180.000</p>
+              <a href="#" class="block text-center bg-green-600 text-white py-2 rounded-lg">Beli</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ================= SLIDE 2 ================= -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 min-w-full">
+          <!-- Tambahkan 4 produk lagi -->
+        </div>
+
+        <!-- ================= SLIDE 3 ================= -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 min-w-full">
+          <!-- Tambahkan 4 produk lagi -->
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tombol Kiri -->
+    <button onclick="prevSlide()"
+      class="absolute -left-14 top-1/2 -translate-y-1/2
+             bg-white shadow-lg w-12 h-12 rounded-full
+             flex items-center justify-center
+             hover:scale-110 transition z-20">
+      ❮
+    </button>
+
+    <!-- Tombol Kanan -->
+    <button onclick="nextSlide()"
+      class="absolute -right-14 top-1/2 -translate-y-1/2
+             bg-white shadow-lg w-12 h-12 rounded-full
+             flex items-center justify-center
+             hover:scale-110 transition z-20">
+      ❯
+    </button>
+
+  </div>
+</section>
+
+<!-- ================= OVERVIEW PRODUCT ================= -->
+    <div class="w-full bg-orange-500/90 py-10 px-6">
+        <!-- Header -->
+        <h1 class="text-3xl font-bold text-white mb-2">Riwayat Pengajuan</h1>
+        <p class="text-white/90 mb-6">
+            Dapatkan informasi terbaru mengenai pengajuan peminjaman yang telah diajukan sebelumnya
+        </p>
+
+        <!-- Card Container -->
+        <div class="bg-white shadow-lg rounded-xl p-4 flex items-center max-w-3xl">
+
+            <!-- Image -->
+            <img 
+                src="https://images.unsplash.com/photo-1581375273703-25dfaa0ba2b0?q=80&w=300" 
+                alt="ruangan" 
+                class="w-28 h-28 object-cover rounded-lg mr-4"
+            />
+
+            <!-- Info -->
+            <div class="flex-1">
+                <h2 class="text-lg font-semibold">Ruang Utama Masjid Raden Patah</h2>
+                <p class="text-gray-600 text-sm">Jumat, 20 Januari 2022</p>
+                <p class="text-gray-600 text-sm">13.30 ~ 15.00 WIB</p>
+                <p class="text-gray-500 text-sm mt-1">Izin menggunakan untuk ibadah</p>
+            </div>
+
+            <!-- Button -->
+            <button class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800">
+                Selengkapnya
+            </button>
+        </div>
+    </div>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  let index = 0;
+  const carousel = document.getElementById("carousel");
+  const totalSlides = 3;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+</script>
+
+</body>
+</html>

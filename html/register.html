@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth Masjid</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="h-screen w-full overflow-hidden">
+
+    <!-- Background -->
+    <div class="relative h-full w-full bg-cover " style="background-image: url('../images/picture\ bg.svg');">
+        <div class="relative h-full w-full bg-cover bg-[center_170%] "
+            style="background-image: url('../images/ornamen.svg');">
+            <div class="relative h-full w-full bg-cover "
+                style="background-image: url('../images/background\ radial.svg');">
+
+                <!-- KONTEN -->
+                <div class="relative z-10 flex h-full">
+                    <img class="w-30 absolute top-10 right-10" src="../images/logo.svg" alt=""></img>
+
+                    <!-- ================= BAGIAN KIRI ================= -->
+                    <div class="w-full md:w-1/2 flex items-center justify-center px-6">
+
+                        <!-- CARD -->
+                        <div id="autentikasiCard" class="w-full min-h-[500px] max-w-md backdrop-blur-xl bg-[#0C182E]/50 border border-white/20
+                 rounded-2xl shadow-2xl p-8 text-white transition-all duration-500">
+
+                            <!-- LOGIN FORM -->
+                            <div id="loginForm">
+                                <h2 class="text-4xl font-bold mb-2">Masuk</h2>
+                                <p class="text-sm text-gray-200 mb-6">
+                                    Masuk untuk menggunakan layanan peminjaman ruangan masjid raden patah
+                                </p>
+                                <label class="mb-2 block" for="Email/NIM">Email/NIM</label>
+                                <input type="text" placeholder="Email/NIM"
+                                    class="w-full mb-4 px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300">
+
+                                <label class="mb-2 block" for="Email/NIM">Password</label>
+                                <input type="password" placeholder="Password"
+                                    class="w-full mb-4 px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300">
+
+                                <p class="text-sm mb-4">
+                                    Belum punya akun?
+                                    <button onclick="showRegister()"
+                                        class="text-[#ED9A25] text-accent font-semibold hover:underline">
+                                        Registrasi
+                                    </button>
+                                </p>
+
+                                <button onclick="window.location.href='homepage.html'"
+                                    class="w-full bg-[#ED9A25] bg-accent py-3 rounded-lg font-semibold hover:bg-[#CF8317]">
+                                    Masuk
+                                </button>
+                            </div>
+
+                            <!-- REGISTER FORM -->
+                            <div id="registerForm" class="hidden opacity-0 transition-all duration-500">
+
+                                <h2 class="text-4xl font-bold mb-2">Daftar</h2>
+                                <p class="text-sm text-gray-200 mb-6">
+                                    Daftarkan diri Anda untuk menggunakan layanan peminjaman ruangan.
+                                </p>
+
+                                <div class="grid md:grid-cols-2 gap-4">
+
+                                    <label class="mb-2 block" for="Email/NIM">Nama Lengkap</label>
+                                    <input type="text" placeholder="Nama Lengkap"
+                                        class="px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-accent">
+
+                                    <label class="mb-2 block" for="Email">Email</label>
+                                    <input type="email" placeholder="Email"
+                                        class="px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-accent">
+                                    <label class="mb-2 block" for="Email/NIM">Nama Lengkap</label>
+                                    <input type="text" placeholder="NIM/NIK"
+                                        class="px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-accent">
+
+                                    <input type="text" placeholder="Nama Instansi"
+                                        class="px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-accent">
+
+                                    <input type="password" placeholder="Kata Sandi"
+                                        class="px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-accent">
+
+                                    <input type="password" placeholder="Ulangi Kata Sandi"
+                                        class="px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-accent">
+                                </div>
+
+                                <input type="text" placeholder="Tujuan Penggunaan"
+                                    class="w-full mt-4 px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-accent">
+
+                                <div class="mt-6">
+                                    <button onclick="window.location.href='homepage.html'"
+                                        class="w-full bg-[#ED9A25] bg-accent py-3 rounded-lg font-semibold hover:bg-[#CF8317]">
+                                        Daftar
+                                    </button>
+                                </div>
+
+                                <p class="text-sm mt-4 text-center">
+                                    Sudah punya akun?
+                                    <button onclick="showLogin()"
+                                        class=" text-[#ED9A25] text-accent font-semibold hover:underline">
+                                        Masuk
+                                    </button>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ================= BAGIAN KANAN ================= -->
+                    <div class="hidden md:flex w-1/2 items-center px-16 text-white">
+                        <div>
+                            <h1 class="text-5xl font-bold leading-tight mb-6">
+                                Layanan Peminjaman <br />
+                                Ruangan Masjid Raden Patah
+                            </h1>
+
+                            <p class="text-gray-200 mb-8 max-w-xl">
+                                masjid raden patah merupakan masjid kampus Universitas Brawijaya,
+                                memiliki tiga ruangan mulai dari ruangan utama, ruangan basement, dan ruangan kajian.
+                                untuk menggunakan ruangan tersebut terdapat alur peminjaman yang dapat dilakukan secara
+                                digital
+                                melalui website atau secara manual dengan datang langsung ke masjid.
+                            </p>
+
+                            <button
+                                class="bg-[#ED9A25] bg-accent px-6 py-3 rounded-lg font-medium hover:bg-[#CF8317] pressed:bg-[#6E5A14] transition">
+                                Alur peminjaman ruangan
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SCRIPT -->
+            <script src="../js/logicUI.js"></script>
+
+
+</body>
+
+</html>
