@@ -23,9 +23,6 @@ function renderNavbar() {
 
           <span class="text-[#19305D] font-medium">Profile</span>
         </div>
-        <button onclick="window.location.href='login_register.html'" class="p-2 rounded-lg transition">
-        <img src="../images/logout-6bjs3s3fnciv7c0ye52y3l.webp" alt="Logout" class="w-6 h-6">
-        </button>
       </div>
     </div>
   </nav>`;
