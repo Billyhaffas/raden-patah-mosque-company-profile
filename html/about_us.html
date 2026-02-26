@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tentang Kami — Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <style>
+        /* Optional: subtle page frame to meniru UI mockup */
+        .browser-frame {
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, .08),
+                0 2px 8px rgba(0, 0, 0, .06);
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(15, 23, 42, .06);
+        }
+
+        .mac-dots::before {
+            content: "";
+            display: inline-block;
+            width: 36px;
+            height: 10px;
+            background:
+                radial-gradient(circle at 6px 6px, #ff5f56 6px, transparent 7px) 0 0/18px 18px no-repeat,
+                radial-gradient(circle at 6px 6px, #ffbd2e 6px, transparent 7px) 9px 0/18px 18px no-repeat,
+                radial-gradient(circle at 6px 6px, #27c93f 6px, transparent 7px) 18px 0/18px 18px no-repeat;
+            margin-right: .5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+    <!-- Page frame (opsional, hanya agar mirip mockup) -->
+    <div class="max-w-6xl mx-auto my-6 px-3">
+        <div class="browser-frame bg-white">
+            <!-- Fake browser bar -->
+            <div class="flex items-center gap-2 h-10 px-4 border-b border-slate-100 bg-slate-50/60">
+                <span class="mac-dots"></span>
+                <div class="h-6 flex-1 rounded bg-white border border-slate-200/70"></div>
+            </div>
+
+            <!-- NAV -->
+            <header class="bg-white">
+                <nav class="max-w-6xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+                    <a href="#" class="flex items-center gap-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/HubSpot_Logo.svg/256px-HubSpot_Logo.svg.png"
+                            alt="Logo" class="h-6 w-auto">
+                    </a>
+                    <ul class="hidden md:flex items-center gap-7 text-sm text-slate-700">
+                        <li class="group relative">
+                            <a href="#" class="hover:text-slate-900">Software</a>
+                        </li>
+                        <li><a href="#" class="hover:text-slate-900">Pricing</a></li>
+                        <li class="group relative">
+                            <a href="#" class="hover:text-slate-900">Resources</a>
+                        </li>
+                    </ul>
+                    <div class="flex items-center gap-3">
+                        <a href="#"
+                            class="hidden sm:inline-flex px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900">Log
+                            in</a>
+                        <a href="#"
+                            class="inline-flex px-4 py-2 text-sm font-semibold rounded-md bg-orange-500 text-white hover:bg-orange-600">Try
+                            it free</a>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- HERO / ABOUT -->
+            <section class="relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-r from-sky-50 to-transparent"></div>
+                <div class="relative max-w-5xl mx-auto px-6 lg:px-10 py-14 lg:py-20">
+                    <h1 class="text-3xl md:text-4xl font-bold text-slate-900">About Us</h1>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl">
+                        Company, culture, and product philosophy are built for a delightful experience—
+                        crafted, not cobbled.
+                    </p>
+                </div>
+            </section>
+
+            <!-- SECTION: Mission (image left, text right) -->
+            <section class="max-w-6xl mx-auto px-6 lg:px-10 py-10">
+                <div class="grid gap-8 lg:grid-cols-12 items-start">
+                    <div class="lg:col-span-5">
+                        <img class="rounded-md w-full object-cover aspect-[4/3]"
+                            src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1200&auto=format&fit=crop"
+                            alt="Office scene" />
+                    </div>
+                    <div class="lg:col-span-7">
+                        <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Our Mission: Helping Millions of
+                            Organizations Grow Better</h2>
+                        <p class="mt-4 text-slate-600 leading-relaxed">
+                            We believe not just in growing bigger, but in growing better. And growing better means
+                            aligning the
+                            success of your own business with the success of your customers. Win‑win!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Story (text left, image right) -->
+            <section class="max-w-6xl mx-auto px-6 lg:px-10 py-4">
+                <div class="grid gap-8 lg:grid-cols-12 items-start">
+                    <div class="lg:col-span-7 order-2 lg:order-1">
+                        <h3 class="text-2xl font-bold text-slate-900">Our Story</h3>
+                        <p class="mt-4 text-slate-600 leading-relaxed">
+                            In 2004, two MIT graduate students set out to reshape how companies grow. Instead of
+                            interrupting buyers with ads, the idea was to be helpful—create content people actually
+                            want.
+                            Over time, the platform evolved to power marketing, sales, and service for organizations of
+                            all sizes.
+                        </p>
+                        <p class="mt-3 text-slate-600 leading-relaxed">
+                            Along the way the company expanded globally while staying focused on a crafted, connected
+                            product suite
+                            that helps teams scale customer relationships with empathy and data.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-5 order-1 lg:order-2">
+                        <img class="rounded-md w-full object-cover aspect-[4/3]"
+                            src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop"
+                            alt="Conversation in a lounge" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Stats / By the Numbers -->
+            <section class="bg-slate-50 border-y border-slate-100 mt-10">
+                <div class="max-w-6xl mx-auto px-6 lg:px-10 py-14">
+                    <h4 class="text-center text-xl md:text-2xl font-semibold text-slate-900">By the Numbers</h4>
+
+                    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                        <!-- Card 1 -->
+                        <article class="bg-white rounded-lg border border-slate-100 p-6 text-center">
+                            <img class="mx-auto h-14 w-14" src="https://cdn-icons-png.flaticon.com/512/854/854878.png"
+                                alt="Globe icon">
+                            <p class="mt-4 text-3xl font-bold text-slate-900">12</p>
+                            <p class="text-slate-600">Global Offices</p>
+                            <a href="#"
+                                class="mt-3 inline-block text-sm font-medium text-sky-700 hover:text-sky-900">Learn more
+                                →</a>
+                        </article>
+
+                        <!-- Card 2 -->
+                        <article class="bg-white rounded-lg border border-slate-100 p-6 text-center">
+                            <img class="mx-auto h-14 w-14" src="https://cdn-icons-png.flaticon.com/512/3448/3448609.png"
+                                alt="Team icon">
+                            <p class="mt-4 text-3xl font-bold text-slate-900">7,000+</p>
+                            <p class="text-slate-600">Employees</p>
+                            <a href="#"
+                                class="mt-3 inline-block text-sm font-medium text-sky-700 hover:text-sky-900">Learn more
+                                →</a>
+                        </article>
+
+                        <!-- Card 3 -->
+                        <article class="bg-white rounded-lg border border-slate-100 p-6 text-center">
+                            <img class="mx-auto h-14 w-14" src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png"
+                                alt="Customers icon">
+                            <p class="mt-4 class text-3xl font-bold text-slate-900">205,000+</p>
+                            <p class="text-slate-600">Customers</p>
+                            <a href="#"
+                                class="mt-3 inline-block text-sm font-medium text-sky-700 hover:text-sky-900">Learn more
+                                →</a>
+                        </article>
+
+                        <!-- Card 4 -->
+                        <article class="bg-white rounded-lg border border-slate-100 p-6 text-center">
+                            <img class="mx-auto h-14 w-14" src="https://cdn-icons-png.flaticon.com/512/992/992651.png"
+                                alt="Award icon">
+                            <p class="mt-4 text-3xl font-bold text-slate-900">#1</p>
+                            <p class="text-slate-600">in 318 categories</p>
+                            <a href="#"
+                                class="mt-3 inline-block text-sm font-medium text-sky-700 hover:text-sky-900">Learn more
+                                →</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Logos / Badges -->
+            <section class="max-w-6xl mx-auto px-6 lg:px-10 py-12">
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-6 items-center justify-items-center">
+                    <img class="h-10 opacity-80"
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png" alt="Badge 1">
+                    <img class="h-10 opacity-80"
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Badge 2">
+                    <img class="h-10 opacity-80"
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Badge 3">
+                    <img class="h-10 opacity-80"
+                        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Spotify_logo_without_text.svg"
+                        alt="Badge 4">
+                    <img class="h-10 opacity-80"
+                        src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Badge 5">
+                    <img class="h-10 opacity-80"
+                        src="https://upload.wikimedia.org/wikipedia/commons/1/19/Shopify_logo_2018.svg" alt="Badge 6">
+                </div>
+
+                <p class="mt-10 text-center text-slate-700">
+                    Voted #1 in 318 categories
+                    <a href="#" class="text-sky-700 hover:text-sky-900 font-medium">Learn more →</a>
+                </p>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="border-t border-slate-200 bg-white">
+                <div
+                    class="max-w-6xl mx-auto px-6 lg:px-10 py-8 text-sm text-slate-600 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+                    <p>© 2026 Example Inc. All rights reserved.</p>
+                    <nav class="flex flex-wrap gap-x-6 gap-y-2">
+                        <a href="#" class="hover:text-slate-900">Legal</a>
+                        <a href="#" class="hover:text-slate-900">Privacy</a>
+                        <a href="#" class="hover:text-slate-900">Security</a>
+                        <a href="#" class="hover:text-slate-900">Accessibility</a>
+                    </nav>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

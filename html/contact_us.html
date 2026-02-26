@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get in Touch</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Hilangkan “spin button” number di beberapa browser (opsional) */
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+    input[type="number"] { -moz-appearance: textfield; }
+  </style>
+</head>
+<body class="min-h-screen bg-white antialiased">
+  <!-- Header / Hero tipis -->
+  <header class="h-40 bg-sky-500"></header>
+
+  <!-- Card Form -->
+  <main class="-mt-24 pb-16">
+    <div class="max-w-3xl mx-auto px-6">
+      <section class="bg-white rounded-lg shadow-[0_10px_30px_rgba(0,0,0,.08)] border border-slate-100">
+        <!-- Judul -->
+        <div class="px-8 pt-10 text-center">
+          <h1 class="text-3xl font-bold text-slate-900">Get in Touch</h1>
+          <p class="mt-2 text-slate-500">Nunc erat cursus tellus gravida.</p>
+        </div>
+
+        <!-- Form -->
+        <form class="px-8 pt-8 pb-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- First name -->
+            <div>
+              <label class="block text-xs font-semibold tracking-wide text-slate-600 mb-2">FIRST NAME</label>
+              <input type="text" placeholder="Please enter first name..."
+                     class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-800 placeholder-slate-400
+                            focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400">
+            </div>
+            <!-- Last name -->
+            <div>
+              <label class="block text-xs font-semibold tracking-wide text-slate-600 mb-2">LAST NAME</label>
+              <input type="text" placeholder="Please enter last name..."
+                     class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-800 placeholder-slate-400
+                            focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400">
+            </div>
+            <!-- Email -->
+            <div>
+              <label class="block text-xs font-semibold tracking-wide text-slate-600 mb-2">EMAIL</label>
+              <input type="email" placeholder="Please enter email..."
+                     class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-800 placeholder-slate-400
+                            focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400">
+            </div>
+            <!-- Phone -->
+            <div>
+              <label class="block text-xs font-semibold tracking-wide text-slate-600 mb-2">PHONE NUMBER</label>
+              <input type="tel" placeholder="Please enter phone number..."
+                     class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-800 placeholder-slate-400
+                            focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400">
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="mt-5">
+            <label class="block text-xs font-semibold tracking-wide text-slate-600 mb-2">WHAT DO YOU HAVE IN MIND</label>
+            <textarea id="message" rows="4" placeholder="Please enter query..."
+                      class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-800 placeholder-slate-400
+                             focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-sky-400 resize-y"></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="mt-7">
+            <button type="submit"
+                    class="w-full rounded-md bg-sky-500 text-white font-semibold py-3
+                           hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400">
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Footer icons -->
+      <div class="flex items-center justify-center gap-6 mt-8 text-slate-400">
+        <a href="#" aria-label="Twitter" class="hover:text-sky-500 transition">
+          <!-- Twitter -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+            <path d="M23 4.5c-.8.4-1.7.6-2.6.8.9-.6 1.6-1.5 1.9-2.6-.9.5-1.9.9-3 .1C18.5 2 17.2 1.5 15.8 1.5c-2.7 0-4.9 2.3-4.9 5 0 .4 0 .8.1 1.1-4.1-.2-7.7-2.3-10.1-5.4-.4.7-.6 1.5-.6 2.3 0 1.7.8 3.2 2.1 4.1-.7 0-1.4-.2-2-.5v.1c0 2.4 1.7 4.4 3.9 4.8-.4.1-.8.2-1.2.2-.3 0-.6 0-.8-.1.6 2 2.4 3.4 4.5 3.4-1.7 1.3-3.9 2.1-6.2 2.1-.4 0-.8 0-1.2-.1 2.2 1.4 4.8 2.2 7.6 2.2 9.1 0 14.1-7.7 14.1-14.3v-.6c1-.7 1.8-1.6 2.5-2.6z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="hover:text-sky-600 transition">
+          <!-- Facebook -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+            <path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.3V12h2.3V9.8c0-2.3 1.4-3.6 3.5-3.6 1 0 2 .2 2 .2v2.2H14c-1.1 0-1.4.7-1.4 1.4V12h2.5l-.4 2.9h-2.1v7A10 10 0 0 0 22 12z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Google" class="hover:text-rose-500 transition">
+          <!-- Google -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+            <path d="M21.6 12.2c0-.7-.1-1.3-.2-1.9H12v3.6h5.4c-.2 1-.8 2-1.7 2.6v2.1h2.7c1.6-1.5 2.5-3.7 2.5-6.4z"/>
+            <path d="M12 22c2.3 0 4.2-.8 5.6-2.1l-2.7-2.1c-.7.5-1.7.8-2.9.8-2.2 0-4-1.5-4.7-3.5H4.4v2.2A9.99 9.99 0 0 0 12 22z"/>
+            <path d="M7.3 13.1a6 6 0 0 1 0-2.2V8.7H4.4a9.98 9.98 0 0 0 0 6.6l2.9-2.2z"/>
+            <path d="M12 6.4c1.2 0 2.2.4 2.9 1.1l2.2-2.2A9.06 9.06 0 0 0 12 2a9.99 9.99 0 0 0-7.6 3.6l2.9 2.2C8 7.9 9.8 6.4 12 6.4z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="hover:text-pink-500 transition">
+          <!-- Instagram -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm5.25-3.25a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Optional: auto-resize textarea agar nyaman diketik -->
+  <script>
+    const ta = document.getElementById('message');
+    if (ta) {
+      const autoResize = () => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; };
+      window.addEventListener('load', autoResize);
+      ta.addEventListener('input', autoResize);
+    }
+  </script>
+</body>
+</html>
