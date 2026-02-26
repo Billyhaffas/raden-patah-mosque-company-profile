@@ -2,269 +2,67 @@
 <html lang="id">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Connect with other members</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Masjid Raden Patah</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* scrollbar halus pada slider ketika di-drag (opsional) */
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
 </head>
 
-<body class="bg-slate-900 antialiased">
+<body class="">
 
-    <!-- HERO SECTION WITH OVERLAY -->
-    <section class="relative">
-        <!-- Background image -->
-        <img src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=1600&auto=format&fit=crop" alt=""
-            class="absolute inset-0 w-full h-full object-cover opacity-50" />
-        <!-- Overlay panel biru -->
-        <div class="absolute inset-0 bg-[#0b3a7a]/90"></div>
+    <!-- ================= NAVBAR ================= -->
 
-        <div class="relative max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
-            <!-- Head icon quote -->
-            <div class="absolute -top-8 left-8 hidden md:flex">
-                <div class="w-16 h-16 rounded-full bg-sky-400 flex items-center justify-center shadow-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M7.17 6C4.88 6 3 7.88 3 10.17 3 12.46 4.88 14.34 7.17 14.34c.5 0 .98-.09 1.43-.25-.42 1.8-1.83 3.26-3.69 3.83l.62 1.89c3.38-1.11 5.47-4.44 4.94-7.97C10.04 8.39 8.8 6 7.17 6zm9.66 0c-2.29 0-4.17 1.88-4.17 4.17s1.88 4.17 4.17 4.17c.5 0 .98-.09 1.43-.25-.42 1.8-1.83 3.26-3.69 3.83l.62 1.89c3.38-1.11 5.47-4.44 4.94-7.97C20.96 8.39 19.72 6 18.83 6z" />
-                    </svg>
-                </div>
-            </div>
+    <div id="navbar" class="w-full h-16 overflow-hidden"></div>
 
-            <!-- Content grid -->
-            <div class="grid lg:grid-cols-12 gap-10">
-                <!-- LEFT TEXT -->
-                <div class="lg:col-span-4 text-white">
-                    <h2 class="text-3xl font-bold">Connect with other members</h2>
-                    <p class="mt-4 text-white/80">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                    <a href="#" class="mt-6 inline-flex items-center gap-2 text-sky-300 hover:text-sky-200">
-                        <span>Connect now</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M12.293 3.293a1 1 0 011.414 0l4.999 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L15.586 11H3a1 1 0 110-2h12.586l-3.293-3.293a1 1 0 010-1.414z" />
-                        </svg>
-                    </a>
-                </div>
+    <!-- ================= KONTEN PORTFOLIO ================= -->
 
-                <!-- RIGHT: TESTIMONIAL SLIDER -->
-                <div class="lg:col-span-8">
-                    <div class="relative">
-                        <!-- Slider wrapper -->
-                        <div id="slider" class="overflow-hidden">
-                            <div id="track" class="flex gap-6 transition-transform duration-500 ease-out">
-                                <!-- Slide 1 (tampilkan 3 kartu per slide pada desktop) -->
-                                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 flex-none w-full">
-                                    <!-- Card -->
-                                    <article class="bg-white rounded-lg shadow-md overflow-hidden">
-                                        <div class="aspect-[4/3] w-full overflow-hidden">
-                                            <img src="https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?q=80&w=800&auto=format&fit=crop"
-                                                alt="" class="w-full h-full object-cover">
-                                        </div>
-                                        <div class="p-4">
-                                            <div class="flex items-center gap-2 text-sky-600">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"
-                                                    fill="currentColor" viewBox="0 0 24 24">
-                                                    <path
-                                                        d="M7.17 6C4.88 6 3 7.88 3 10.17 3 12.46 4.88 14.34 7.17 14.34c.5 0 .98-.09 1.43-.25-.42 1.8-1.83 3.26-3.69 3.83l.62 1.89c3.38-1.11 5.47-4.44 4.94-7.97C10.04 8.39 8.8 6 7.17 6z" />
-                                                </svg>
-                                                <span class="text-sm font-medium text-slate-700">“</span>
-                                            </div>
-                                            <p class="mt-2 text-slate-600 text-sm">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt ut labore.
-                                            </p>
-                                            <div class="mt-4">
-                                                <p class="font-semibold text-slate-900">Michael</p>
-                                                <p class="text-xs text-slate-500">NOS Manufacturing</p>
-                                            </div>
-                                        </div>
-                                    </article>
+    <div class="text-center pt-12 pb-0 bg-gray-50 ">
 
-                                    <article class="bg-white rounded-lg shadow-md overflow-hidden">
-                                        <div class="aspect-[4/3] w-full overflow-hidden">
-                                            <img src="https://images.unsplash.com/photo-1521577352947-9bb58764b69a?q=80&w=800&auto=format&fit=crop"
-                                                alt="" class="w-full h-full object-cover">
-                                        </div>
-                                        <div class="p-4">
-                                            <div class="flex items-center gap-2 text-sky-600">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"
-                                                    fill="currentColor" viewBox="0 0 24 24">
-                                                    <path
-                                                        d="M7.17 6C4.88 6 3 7.88 3 10.17 3 12.46 4.88 14.34 7.17 14.34c.5 0 .98-.09 1.43-.25-.42 1.8-1.83 3.26-3.69 3.83l.62 1.89c3.38-1.11 5.47-4.44 4.94-7.97C10.04 8.39 8.8 6 7.17 6z" />
-                                                </svg>
-                                                <span class="text-sm font-medium text-slate-700">“</span>
-                                            </div>
-                                            <p class="mt-2 text-slate-600 text-sm">
-                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                                dolore eu fugiat nulla pariatur.
-                                            </p>
-                                            <div class="mt-4">
-                                                <p class="font-semibold text-slate-900">Diane</p>
-                                                <p class="text-xs text-slate-500">ABC Rentals</p>
-                                            </div>
-                                        </div>
-                                    </article>
+        <h1 class="bg-gray-50 text-3xl md:text-4xl font-bold text-[#19305D] relative inline-block">
+            Apa Kata Mereka?
+            <span class="block h-1 w-16 bg-gray-50 mx-auto mt-3 rounded-full"></span>
+        </h1>
 
-                                    <article class="bg-white rounded-lg shadow-md overflow-hidden">
-                                        <div class="aspect-[4/3] w-full overflow-hidden">
-                                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop"
-                                                alt="" class="w-full h-full object-cover">
-                                        </div>
-                                        <div class="p-4">
-                                            <div class="flex items-center gap-2 text-sky-600">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"
-                                                    fill="currentColor" viewBox="0 0 24 24">
-                                                    <path
-                                                        d="M7.17 6C4.88 6 3 7.88 3 10.17 3 12.46 4.88 14.34 7.17 14.34c.5 0 .98-.09 1.43-.25-.42 1.8-1.83 3.26-3.69 3.83l.62 1.89c3.38-1.11 5.47-4.44 4.94-7.97C10.04 8.39 8.8 6 7.17 6z" />
-                                                </svg>
-                                                <span class="text-sm font-medium text-slate-700">“</span>
-                                            </div>
-                                            <p class="mt-2 text-slate-600 text-sm">
-                                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                                officia deserunt mollit anim id est.
-                                            </p>
-                                            <div class="mt-4">
-                                                <p class="font-semibold text-slate-900">Allison</p>
-                                                <p class="text-xs text-slate-500">Grand Party Rental</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
+    </div>
+    <section class="pt-5 pb-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 flex justify-center">
 
-                                <!-- Slide 2 (duplikasi contoh) -->
-                                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 flex-none w-full">
-                                    <article class="bg-white rounded-lg shadow-md overflow-hidden">
-                                        <div class="aspect-[4/3]">
-                                            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=800&auto=format&fit=crop"
-                                                alt="" class="w-full h-full object-cover">
-                                        </div>
-                                        <div class="p-4">
-                                            <div class="flex items-center gap-2 text-sky-600">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"
-                                                    fill="currentColor" viewBox="0 0 24 24">
-                                                    <path
-                                                        d="M7.17 6C4.88 6 3 7.88 3 10.17 3 12.46 4.88 14.34 7.17 14.34c.5 0 .98-.09 1.43-.25-.42 1.8-1.83 3.26-3.69 3.83l.62 1.89c3.38-1.11 5.47-4.44 4.94-7.97C10.04 8.39 8.8 6 7.17 6z" />
-                                                </svg>
-                                            </div>
-                                            <p class="mt-2 text-slate-600 text-sm">Tempor incididunt ut labore et dolore
-                                                magna aliqua.</p>
-                                            <div class="mt-4">
-                                                <p class="font-semibold text-slate-900">Sam</p>
-                                                <p class="text-xs text-slate-500">Builder Co</p>
-                                            </div>
-                                        </div>
-                                    </article>
+            <div class="max-w-md w-full bg-white rounded-xl shadow-md p-8 
+                hover:shadow-xl transition duration-300">
 
-                                    <article class="bg-white rounded-lg shadow-md overflow-hidden">
-                                        <div class="aspect-[4/3]">
-                                            <img src="https://images.unsplash.com/photo-1548142813-c348350df52b?q=80&w=800&auto=format&fit=crop"
-                                                alt="" class="w-full h-full object-cover">
-                                        </div>
-                                        <div class="p-4">
-                                            <div class="flex items-center gap-2 text-sky-600">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"
-                                                    fill="currentColor" viewBox="0 0 24 24">
-                                                    <path
-                                                        d="M7.17 6C4.88 6 3 7.88 3 10.17 3 12.46 4.88 14.34 7.17 14.34c.5 0 .98-.09 1.43-.25-.42 1.8-1.83 3.26-3.69 3.83l.62 1.89c3.38-1.11 5.47-4.44 4.94-7.97C10.04 8.39 8.8 6 7.17 6z" />
-                                                </svg>
-                                            </div>
-                                            <p class="mt-2 text-slate-600 text-sm">Commodo consequat. Duis aute irure
-                                                dolor in reprehenderit.</p>
-                                            <div class="mt-4">
-                                                <p class="font-semibold text-slate-900">Lee</p>
-                                                <p class="text-xs text-slate-500">North Tools</p>
-                                            </div>
-                                        </div>
-                                    </article>
+                <!-- Profile -->
+                <div class="flex items-center mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyqUuHt-N5MDLH6B0cq7ajY6XUELHxoiFD3z_Ox1vTBxRwkSfP01AuEUEu_zXQlPJqm-3V1VRWK0_xawSLugQJmP9UImwpxQw1OwTY9g&s=10"
+                        alt="User" class="w-12 h-12 rounded-full object-cover mr-4">
 
-                                    <article class="bg-white rounded-lg shadow-md overflow-hidden">
-                                        <div class="aspect-[4/3]">
-                                            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=800&auto=format&fit=crop"
-                                                alt="" class="w-full h-full object-cover">
-                                        </div>
-                                        <div class="p-4">
-                                            <div class="flex items-center gap-2 text-sky-600">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"
-                                                    fill="currentColor" viewBox="0 0 24 24">
-                                                    <path
-                                                        d="M7.17 6C4.88 6 3 7.88 3 10.17 3 12.46 4.88 14.34 7.17 14.34c.5 0 .98-.09 1.43-.25-.42 1.8-1.83 3.26-3.69 3.83l.62 1.89c3.38-1.11 5.47-4.44 4.94-7.97C10.04 8.39 8.8 6 7.17 6z" />
-                                                </svg>
-                                            </div>
-                                            <p class="mt-2 text-slate-600 text-sm">Sint occaecat cupidatat non proident,
-                                                sunt in culpa officia.</p>
-                                            <div class="mt-4">
-                                                <p class="font-semibold text-slate-900">Pat</p>
-                                                <p class="text-xs text-slate-500">LogiRent</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Controls -->
-                        <div class="mt-6 flex items-center justify-between">
-                            <div class="flex items-center gap-2">
-                                <button id="prev"
-                                    class="w-7 h-7 rounded bg-sky-400 text-white grid place-items-center hover:bg-sky-500">
-                                    ‹
-                                </button>
-                                <button id="next"
-                                    class="w-7 h-7 rounded bg-sky-400 text-white grid place-items-center hover:bg-sky-500">
-                                    ›
-                                </button>
-                            </div>
-
-                            <div class="flex items-center gap-2">
-                                <button class="dot w-2.5 h-2.5 rounded-full bg-white/40 data-[active=true]:bg-white"
-                                    data-index="0"></button>
-                                <button class="dot w-2.5 h-2.5 rounded-full bg-white/40 data-[active=true]:bg-white"
-                                    data-index="1"></button>
-                            </div>
-                        </div>
+                    <div>
+                        <h4 class="font-semibold text-[#19305D]">Jokowi Duodo</h4>
+                        <p class="text-sm text-gray-500">Ruang Basement</p>
                     </div>
                 </div>
-            </div> <!-- /grid -->
+
+                <!-- Testimoni -->
+                <p class="text-gray-600 italic leading-relaxed">
+                    "Pelayanan yang diberikan sangat memuaskan. Prosesnya cepat, fasilitasnya lengkap, dan suasananya
+                    nyaman. Sangat direkomendasikan!"
+                </p>
+
+                <!-- Rating -->
+                <div class="flex mt-4 text-yellow-400 text-lg">
+                    ★★★★★
+                </div>
+
+            </div>
+
         </div>
     </section>
 
-    <!-- Minimal JS slider (geser antar “slide” besar) -->
-    <script>
-        const track = document.getElementById('track');
-        const dots = Array.from(document.querySelectorAll('.dot'));
-        const prev = document.getElementById('prev');
-        const next = document.getElementById('next');
+    <!-- ================= FOOTER ================= -->
+    <div id="footer"></div>
+    <script src="../js/navbar_footer.js"></script>
 
-        let index = 0;                      // 0..(slideCount-1)
-        const slideCount = dots.length;
 
-        function apply() {
-            const width = track.children[0].getBoundingClientRect().width; // lebar satu slide
-            track.style.transform = `translateX(-${index * width}px)`;
-            dots.forEach((d, i) => d.dataset.active = String(i === index));
-        }
-
-        // init setelah paint pertama
-        window.addEventListener('load', apply);
-        window.addEventListener('resize', apply);
-        next.addEventListener('click', () => { index = (index + 1) % slideCount; apply(); });
-        prev.addEventListener('click', () => { index = (index - 1 + slideCount) % slideCount; apply(); });
-        dots.forEach(d => d.addEventListener('click', () => { index = Number(d.dataset.index); apply(); }));
-    </script>
 </body>
+
 
 </html>

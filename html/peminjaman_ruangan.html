@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Masjid Raden Patah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <div id="navbar" class="w-full h-16 overflow-hidden"></div>
+
+    <!-- ================= KONTEN SERVICE ================= -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-10">
+
+            <!-- Heading -->
+            <h1 class="text-3xl md:text-4xl font-bold text-[#19305D] mb-8 text-center">
+                Form Pengajuan Penyewaan Ruangan
+            </h1>
+
+            <form class="space-y-6">
+
+                <!-- Data Pemohon -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-600 mb-2">
+                            Nama Lengkap
+                        </label>
+                        <input type="text" placeholder="Masukkan Nama Lengkap" class="w-full rounded-md border border-slate-200 px-3 py-2
+                   focus:outline-none focus:ring-2 focus:ring-[#19305D]">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-600 mb-2">
+                            Nomor Telepon
+                        </label>
+                        <input type="tel" placeholder="08xxxxxxxxxx" class="w-full rounded-md border border-slate-200 px-3 py-2
+                   focus:outline-none focus:ring-2 focus:ring-[#19305D]">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-600 mb-2">
+                            Email
+                        </label>
+                        <input type="email" placeholder="email@gmail.com" class="w-full rounded-md border border-slate-200 px-3 py-2
+                   focus:outline-none focus:ring-2 focus:ring-[#19305D]">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-600 mb-2">
+                            Jumlah Peserta
+                        </label>
+                        <input type="number" placeholder="Jumlah orang" class="w-full rounded-md border border-slate-200 px-3 py-2
+                   focus:outline-none focus:ring-2 focus:ring-[#19305D]">
+                    </div>
+
+                </div>
+
+                <!-- Detail Penyewaan -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-600 mb-2">
+                            Pilih Ruangan
+                        </label>
+                        <select class="w-full rounded-md border border-slate-200 px-3 py-2
+                         focus:outline-none focus:ring-2 focus:ring-[#19305D]">
+                            <option>Ruang Serbaguna</option>
+                            <option>Aula Utama</option>
+                            <option>Ruang Rapat</option>
+                            <option>Halaman Masjid</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-600 mb-2">
+                            Keperluan Acara
+                        </label>
+                        <input type="text" placeholder="Contoh: Kajian, Pernikahan, Seminar" class="w-full rounded-md border border-slate-200 px-3 py-2
+                   focus:outline-none focus:ring-2 focus:ring-[#19305D]">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-600 mb-2">
+                            Tanggal Acara
+                        </label>
+                        <input type="date" class="w-full rounded-md border border-slate-200 px-3 py-2
+                   focus:outline-none focus:ring-2 focus:ring-[#19305D]">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-600 mb-2">
+                            Waktu Acara
+                        </label>
+                        <input type="time" class="w-full rounded-md border border-slate-200 px-3 py-2
+                   focus:outline-none focus:ring-2 focus:ring-[#19305D]">
+                    </div>
+
+                </div>
+
+                <!-- Pesan Tambahan -->
+                <div>
+                    <label class="block text-sm font-semibold text-slate-600 mb-2">
+                        Catatan Tambahan
+                    </label>
+                    <textarea rows="4" placeholder="Tuliskan kebutuhan tambahan jika ada..." class="w-full rounded-md border border-slate-200 px-3 py-2
+                 focus:outline-none focus:ring-2 focus:ring-[#19305D] resize-none"></textarea>
+                </div>
+
+                <!-- Submit -->
+                <div>
+                    <button type="submit" class="w-full bg-[#19305D] text-white font-semibold py-3 rounded-md
+                 hover:bg-[#15284D] transition duration-300">
+                        Ajukan Penyewaan
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+
+
+    <!-- JS FILE -->
+    <script src="../js/service.js"></script>
+
+    <!-- ================= FOOTER ================= -->
+    <div id="footer"></div>
+    <script src="../js/navbar_footer.js"></script>
+
+
+</body>
+
+
+</html>

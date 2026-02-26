@@ -1,0 +1,4 @@
+ .bg-fade { transition: background-image .35s ease, filter .25s ease; will-change: background-image; }
+    /* sembunyikan scrollbar di webkit (opsional) */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

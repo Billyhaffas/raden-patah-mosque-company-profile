@@ -1,190 +1,95 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pilih Ruangan — Carousel 1 Baris</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .bg-fade { transition: background-image .35s ease, filter .25s ease; will-change: background-image; }
-    /* sembunyikan scrollbar di webkit (opsional) */
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Masjid Raden Patah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-900 text-white antialiased">
 
-  <!-- HERO -->
-  <section id="hero" class="relative bg-fade"
-           style="background-image:url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?q=80&w=1600&auto=format&fit=crop');
-                  background-size:cover; background-position:center;">
-    <div class="absolute inset-0 bg-slate-900/60"></div>
+<body class="">
 
-    <div class="relative max-w-7xl mx-auto px-4 lg:px-8 py-14 lg:py-24">
-      <div class="max-w-2xl">
-        <h1 id="heroTitle" class="text-3xl md:text-5xl font-bold">Ruangan Utama</h1>
-        <p id="heroDesc" class="mt-4 md:text-lg text-white/85 leading-relaxed">
-          Masjid Raden Patah memiliki beberapa ruangan: Ruangan Utama, Ruangan Basement, dan Ruangan Lantai 3.
-          Pilih salah satu untuk melihat latar.
-        </p>
-      </div>
+    <!-- ================= NAVBAR ================= -->
 
-      <!-- CAROUSEL 1 BARIS -->
-      <div class="mt-10">
-        <!-- controls -->
-        <div class="mb-4 flex items-center gap-2">
-          <button id="prev"
-                  class="w-8 h-8 rounded-md bg-white/15 hover:bg-white/25 grid place-items-center
-                         focus:outline-none focus:ring-2 focus:ring-white/60">
-            ‹
-          </button>
-          <button id="next"
-                  class="w-8 h-8 rounded-md bg-white/15 hover:bg-white/25 grid place-items-center
-                         focus:outline-none focus:ring-2 focus:ring-white/60">
-            ›
-          </button>
+    <div id="navbar" class="w-full h-16 overflow-hidden"></div>
+
+    <!-- ================= KONTEN SERVICE ================= -->
+    <!-- SECTION -->
+    <section class="py-16 bg-gray-100">
+
+        <div class="max-w-5xl mx-auto px-6">
+
+            <!-- CARD CONTAINER -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
+                <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+                    <h3 class="text-lg font-semibold mb-2">Ruangan Utama</h3>
+                    <p class="text-sm text-gray-600">Kapasitas besar untuk acara utama.</p>
+                </div>
+
+                <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+                    <h3 class="text-lg font-semibold mb-2">Basement</h3>
+                    <p class="text-sm text-gray-600">Cocok untuk kajian kecil.</p>
+                </div>
+
+                <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+                    <h3 class="text-lg font-semibold mb-2">Ruang Kajian</h3>
+                    <p class="text-sm text-gray-600">Ruangan diskusi dan belajar.</p>
+                </div>
+
+                <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+                    <h3 class="text-lg font-semibold mb-2">Ruangan Utama</h3>
+                    <p class="text-sm text-gray-600">Kapasitas besar untuk acara utama.</p>
+                </div>
+
+                <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+                    <h3 class="text-lg font-semibold mb-2">Basement</h3>
+                    <p class="text-sm text-gray-600">Cocok untuk kajian kecil.</p>
+                </div>
+
+                <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+                    <h3 class="text-lg font-semibold mb-2">Ruang Kajian</h3>
+                    <p class="text-sm text-gray-600">Ruangan diskusi dan belajar.</p>
+                </div>
+
+                <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+                    <h3 class="text-lg font-semibold mb-2">Ruangan Utama</h3>
+                    <p class="text-sm text-gray-600">Kapasitas besar untuk acara utama.</p>
+                </div>
+
+                <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+                    <h3 class="text-lg font-semibold mb-2">Basement</h3>
+                    <p class="text-sm text-gray-600">Cocok untuk kajian kecil.</p>
+                </div>
+
+                <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+                    <h3 class="text-lg font-semibold mb-2">Ruang Kajian</h3>
+                    <p class="text-sm text-gray-600">Ruangan diskusi dan belajar.</p>
+                </div>
+
+            </div>
+            <!-- BUTTON AJUKAN -->
+            <div class="text-center mt-10">
+                <button onclick="window.location.href='peminjaman_ruangan.html'"  class="px-8 py-3 bg-yellow-400 hover:bg-yellow-500 rounded-xl font-semibold transition">
+                    Ajukan Peminjaman
+                </button>
+            </div>
+
         </div>
 
-        <!-- viewport -->
-        <div id="viewport" class="overflow-x-auto no-scrollbar scroll-smooth">
-          <!-- track (flex sebaris) -->
-          <div id="track" class="flex gap-4 md:gap-6 pr-4">
-            <!-- CARD TEMPLATE -->
-            <!-- 1 -->
-            <button
-              class="room-card group relative overflow-hidden rounded-2xl min-w-[280px] md:min-w-[340px]
-                     bg-white/5 hover:bg-white/10 border border-white/15 transition
-                     focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-              data-title="Ruangan Utama"
-              data-desc="Ruang utama untuk kegiatan besar seperti khutbah, kajian umum, dan acara resmi."
-              data-bg="https://images.unsplash.com/photo-1526045612212-70caf35c14df?q=80&w=1600&auto=format&fit=crop"
-              aria-pressed="true">
-              <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?q=80&w=900&auto=format&fit=crop"
-                   alt="" class="h-40 md:h-44 w-full object-cover">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/20 to-transparent"></div>
-              <div class="absolute inset-0 ring-0 rounded-2xl pointer-events-none" aria-hidden="true"></div>
-              <div class="absolute bottom-0 left-0 right-0 p-4">
-                <p class="text-center font-semibold">Ruangan Utama</p>
-              </div>
-            </button>
+    </section>
 
-            <!-- 2 -->
-            <button
-              class="room-card group relative overflow-hidden rounded-2xl min-w-[280px] md:min-w-[340px]
-                     bg-white/5 hover:bg-white/10 border border-white/15 transition
-                     focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-              data-title="Ruangan Basement"
-              data-desc="Area serbaguna di basement: cocok untuk pertemuan komunitas, latihan, dan kegiatan internal."
-              data-bg="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop"
-              aria-pressed="false">
-              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=900&auto=format&fit=crop"
-                   alt="" class="h-40 md:h-44 w-full object-cover grayscale">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/20 to-transparent"></div>
-              <div class="absolute bottom-0 left-0 right-0 p-4">
-                <p class="text-center font-semibold">Ruangan Basement</p>
-              </div>
-            </button>
 
-            <!-- 3 -->
-            <button
-              class="room-card group relative overflow-hidden rounded-2xl min-w-[280px] md:min-w-[340px]
-                     bg-white/5 hover:bg-white/10 border border-white/15 transition
-                     focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-              data-title="Ruangan Lt. 3"
-              data-desc="Ruang di lantai 3: cocok untuk kajian, kelas kecil, dan diskusi kelompok."
-              data-bg="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1600&auto=format&fit=crop"
-              aria-pressed="false">
-              <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=900&auto=format&fit=crop"
-                   alt="" class="h-40 md:h-44 w-full object-cover">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/20 to-transparent"></div>
-              <div class="absolute bottom-0 left-0 right-0 p-4">
-                <p class="text-center font-semibold">Ruangan Lt. 3</p>
-              </div>
-            </button>
+    <!-- JS FILE -->
+    <script src="../js/service.js"></script>
 
-            <!-- (opsional) tambahkan kartu lain: tinggal copy block di atas -->
-          </div>
-        </div>
-      </div>
+    <!-- ================= FOOTER ================= -->
+    <div id="footer"></div>
+    <script src="../js/navbar_footer.js"></script>
 
-      <!-- CTA -->
-      <div class="mt-8">
-        <a href="#"
-           class="inline-flex items-center gap-2 rounded-full bg-amber-500 text-slate-900 font-semibold px-5 py-3
-                  hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-300">
-          Ajukan Peminjaman
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-            <path d="M12.293 3.293a1 1 0 011.414 0l4.999 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L15.586 11H3a1 1 0 110-2h12.586l-3.293-3.293a1 1 0 010-1.414z"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <script>
-    // --- Ganti background hero & state aktif saat klik kartu ---
-    const hero  = document.getElementById('hero');
-    const title = document.getElementById('heroTitle');
-    const desc  = document.getElementById('heroDesc');
-    const cards = Array.from(document.querySelectorAll('.room-card'));
-
-    function setActive(card) {
-      // reset
-      cards.forEach(c => {
-        c.classList.remove('ring-2','ring-amber-400','border-amber-400/60','bg-white/10');
-        c.setAttribute('aria-pressed','false');
-      });
-      // aktifkan
-      card.classList.add('ring-2','ring-amber-400','border-amber-400/60','bg-white/10');
-      card.setAttribute('aria-pressed','true');
-
-      // update hero
-      hero.style.filter = 'brightness(0.92)';
-      hero.style.backgroundImage = `url('${card.dataset.bg}')`;
-      title.textContent = card.dataset.title;
-      desc.textContent  = card.dataset.desc;
-      setTimeout(()=> hero.style.filter = 'brightness(1)', 180);
-    }
-
-    cards.forEach(card => {
-      card.addEventListener('click', () => setActive(card));
-      card.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setActive(card); }
-      });
-      card.setAttribute('role','button');
-      card.setAttribute('tabindex','0');
-    });
-
-    // --- Carousel 1 baris: tombol prev/next menggeser viewport secara halus ---
-    const viewport = document.getElementById('viewport');
-    const track    = document.getElementById('track');
-    const prevBtn  = document.getElementById('prev');
-    const nextBtn  = document.getElementById('next');
-
-    function scrollByCard(dir = 1) {
-      const card = track.querySelector('.room-card');
-      if (!card) return;
-      const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 16;
-      const step = card.getBoundingClientRect().width + gap; // lebar satu kartu + gap
-      viewport.scrollBy({ left: dir * step, behavior: 'smooth' });
-    }
-
-    prevBtn.addEventListener('click', () => scrollByCard(-1));
-    nextBtn.addEventListener('click', () => scrollByCard(1));
-
-    // swipe (mobile)
-    let startX = 0;
-    viewport.addEventListener('pointerdown', (e) => { startX = e.clientX; });
-    viewport.addEventListener('pointerup',   (e) => {
-      const dx = e.clientX - startX;
-      if (Math.abs(dx) > 40) scrollByCard(dx > 0 ? -1 : 1);
-    });
-
-    // init: tandai kartu pertama aktif
-    window.addEventListener('load', () => {
-      const current = cards.find(c => c.getAttribute('aria-pressed') === 'true') || cards[0];
-      if (current) setActive(current);
-    });
-  </script>
 </body>
+
+
 </html>

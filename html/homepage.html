@@ -1,239 +1,254 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beranda - Masjid Raden Patah</title>
-<script src="https://cdn.tailwindcss.com"></script>
 
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        primary: "#1E3A8A",
-        accent: "#F59E0B"
-      }
-    }
-  }
-}
-</script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - Masjid Raden Patah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-slate-100">
+<body class="">
 
-<!-- ================= NAVBAR ================= -->
-<nav class="bg-white shadow-sm">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+  <!-- ================= NAVBAR ================= -->
 
-    <!-- Logo -->
-    <div class="flex items-center space-x-3">
-      <div class="w-10 h-10 bg-primary rounded-lg"></div>
-    </div>
+  <div id="navbar" class="w-full h-16 overflow-hidden"></div>
 
-    <!-- Menu -->
-    <div class="hidden md:flex space-x-8 font-medium text-gray-700">
-      <a href="#" class="text-primary border-b-2 border-primary pb-1">Beranda</a>
-      <a href="#" class="hover:text-primary">Ruangan</a>
-      <a href="#" class="hover:text-primary">Alur Peminjaman</a>
-      <a href="#" class="hover:text-primary">SOP</a>
-    </div>
+  <!-- ================= HOMEPAGE ================= -->
 
-    <!-- Right -->
-    <div class="flex items-center space-x-6">
-      <a href="#" class="text-gray-700 hover:text-primary font-medium">
-        Status Pengajuan
-      </a>
+  <!-- ================= KONTEN TENTANG KAMI ================= -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
-      <button class="relative text-xl">
-        🔔
-        <span class="absolute -top-1 -right-2 bg-red-500 text-white text-xs rounded-full px-1">
-          2
-        </span>
-      </button>
+      <!-- Heading -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#19305D] inline-block relative">
+          Masjid Raden Patah
+          <span class="block h-1 w-20 bg-amber-400 mx-auto mt-4 rounded-full"></span>
+        </h2>
 
-      <div class="flex items-center space-x-2">
-        <span class="font-medium">Billy Haffas</span>
-        <div class="w-9 h-9 bg-gray-300 rounded-full"></div>
+        <p class="text-gray-600 mt-6 max-w-2xl mx-auto">
+          Masjid Raden Patah hadir sebagai pusat ibadah dan kegiatan umat
+          yang terbuka, nyaman, dan bermanfaat bagi masyarakat.
+        </p>
       </div>
-    </div>
-  </div>
-</nav>
 
+      <!-- Content -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
 
-<!-- ================= HERO SECTION ================= -->
-<section class="relative h-[500px] bg-cover bg-center"
-style="background-image: url('https://images.unsplash.com/photo-1584515933487-779824d29309');">
-
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-blue-900/70"></div>
-
-  <div class="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center text-white">
-    <div class="max-w-xl">
-      <h1 class="text-5xl font-bold mb-6">
-        Produk Islami
-      </h1>
-
-      <p class="text-gray-200 mb-6">
-        Masjid Raden Patah menyediakan berbagai kebutuhan islami seperti kurma,
-        sarung, kopiah, mukena, sajadah dan perlengkapan ibadah lainnya.
-      </p>
-
-      <a href="#produk"
-         class="bg-accent hover:bg-orange-600 px-6 py-3 rounded-lg font-semibold">
-        Belanja Sekarang
-      </a>
-    </div>
-  </div>
-
-  <!-- Decorative bottom gradient -->
-  <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-slate-100 to-transparent"></div>
-</section>
-
-
-<!-- ================= PRODUK CAROUSEL ================= -->
-<section id="produk" class="max-w-7xl mx-auto px-16 py-16 relative">
-
-  <h2 class="text-3xl font-bold text-gray-800 mb-10">
-    Produk Terbaru
-  </h2>
-
-  <div class="relative">
-
-    <!-- CONTAINER CARD -->
-    <div class="overflow-hidden">
-      <div id="carousel"
-        class="flex transition-transform duration-500 ease-in-out">
-
-        <!-- ================= SLIDE 1 ================= -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 min-w-full">
-
-          <!-- 4 PRODUCT SAJA -->
-          <div class="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
-            <img src="https://picsum.photos/400?1" class="h-44 w-full object-cover">
-            <div class="p-5">
-              <h3 class="font-semibold mb-2">Kurma Ajwa</h3>
-              <p class="text-green-700 font-bold mb-3">Rp 95.000</p>
-              <a href="#" class="block text-center bg-green-600 text-white py-2 rounded-lg">Beli</a>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
-            <img src="https://picsum.photos/400?2" class="h-44 w-full object-cover">
-            <div class="p-5">
-              <h3 class="font-semibold mb-2">Sarung Premium</h3>
-              <p class="text-green-700 font-bold mb-3">Rp 150.000</p>
-              <a href="#" class="block text-center bg-green-600 text-white py-2 rounded-lg">Beli</a>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
-            <img src="https://picsum.photos/400?3" class="h-44 w-full object-cover">
-            <div class="p-5">
-              <h3 class="font-semibold mb-2">Kopiah</h3>
-              <p class="text-green-700 font-bold mb-3">Rp 75.000</p>
-              <a href="#" class="block text-center bg-green-600 text-white py-2 rounded-lg">Beli</a>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
-            <img src="https://picsum.photos/400?4" class="h-44 w-full object-cover">
-            <div class="p-5">
-              <h3 class="font-semibold mb-2">Mukena Travel</h3>
-              <p class="text-green-700 font-bold mb-3">Rp 180.000</p>
-              <a href="#" class="block text-center bg-green-600 text-white py-2 rounded-lg">Beli</a>
-            </div>
-          </div>
-
+        <!-- Image -->
+        <div>
+          <img src="../images/Autentikasi.png" alt="Tentang Masjid"
+            class="rounded-2xl shadow-lg object-cover w-full h-[350px]">
         </div>
 
-        <!-- ================= SLIDE 2 ================= -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 min-w-full">
-          <!-- Tambahkan 4 produk lagi -->
-        </div>
+        <!-- Text Content -->
+        <div>
+          <h3 class="text-2xl font-semibold text-[#19305D] mb-4">
+            Visi Kami
+          </h3>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            Menjadi pusat kegiatan keagamaan yang modern, inklusif,
+            dan memberikan manfaat luas bagi masyarakat sekitar.
+          </p>
 
-        <!-- ================= SLIDE 3 ================= -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 min-w-full">
-          <!-- Tambahkan 4 produk lagi -->
+          <h3 class="text-2xl font-semibold text-[#19305D] mb-4">
+            Misi Kami
+          </h3>
+
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start gap-3">
+              <span class="w-2 h-2 bg-amber-400 rounded-full mt-2"></span>
+              Menyediakan fasilitas ibadah yang nyaman dan bersih.
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-2 h-2 bg-amber-400 rounded-full mt-2"></span>
+              Mendukung kegiatan sosial dan keagamaan masyarakat.
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-2 h-2 bg-amber-400 rounded-full mt-2"></span>
+              Memberikan pelayanan yang profesional dan transparan.
+            </li>
+          </ul>
+
         </div>
 
       </div>
+
+    </div>
+  </section>
+
+  <!-- ================= KONTEN SERVICE ================= -->
+  <!-- SECTION -->
+  <section class="py-16 bg-gray-100">
+
+    <div class="max-w-5xl mx-auto px-6">
+
+      <!-- CARD CONTAINER -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
+        <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+          <h3 class="text-lg font-semibold mb-2">Ruangan Utama</h3>
+          <p class="text-sm text-gray-600">Kapasitas besar untuk acara utama.</p>
+        </div>
+
+        <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+          <h3 class="text-lg font-semibold mb-2">Basement</h3>
+          <p class="text-sm text-gray-600">Cocok untuk kajian kecil.</p>
+        </div>
+
+        <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+          <h3 class="text-lg font-semibold mb-2">Ruang Kajian</h3>
+          <p class="text-sm text-gray-600">Ruangan diskusi dan belajar.</p>
+        </div>
+
+        <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+          <h3 class="text-lg font-semibold mb-2">Ruangan Utama</h3>
+          <p class="text-sm text-gray-600">Kapasitas besar untuk acara utama.</p>
+        </div>
+
+        <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+          <h3 class="text-lg font-semibold mb-2">Basement</h3>
+          <p class="text-sm text-gray-600">Cocok untuk kajian kecil.</p>
+        </div>
+
+        <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+          <h3 class="text-lg font-semibold mb-2">Ruang Kajian</h3>
+          <p class="text-sm text-gray-600">Ruangan diskusi dan belajar.</p>
+        </div>
+
+        <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+          <h3 class="text-lg font-semibold mb-2">Ruangan Utama</h3>
+          <p class="text-sm text-gray-600">Kapasitas besar untuk acara utama.</p>
+        </div>
+
+        <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+          <h3 class="text-lg font-semibold mb-2">Basement</h3>
+          <p class="text-sm text-gray-600">Cocok untuk kajian kecil.</p>
+        </div>
+
+        <div class="card cursor-pointer p-6 rounded-xl bg-white shadow-md transition">
+          <h3 class="text-lg font-semibold mb-2">Ruang Kajian</h3>
+          <p class="text-sm text-gray-600">Ruangan diskusi dan belajar.</p>
+        </div>
+
+      </div>
+      <!-- BUTTON AJUKAN -->
+      <div class="text-center mt-10">
+        <button onclick="window.location.href='peminjaman_ruangan.html'"
+          class="px-8 py-3 bg-yellow-400 hover:bg-yellow-500 rounded-xl font-semibold transition">
+          Ajukan Peminjaman
+        </button>
+      </div>
+
     </div>
 
-    <!-- Tombol Kiri -->
-    <button onclick="prevSlide()"
-      class="absolute -left-14 top-1/2 -translate-y-1/2
-             bg-white shadow-lg w-12 h-12 rounded-full
-             flex items-center justify-center
-             hover:scale-110 transition z-20">
-      ❮
-    </button>
+  </section>
 
-    <!-- Tombol Kanan -->
-    <button onclick="nextSlide()"
-      class="absolute -right-14 top-1/2 -translate-y-1/2
-             bg-white shadow-lg w-12 h-12 rounded-full
-             flex items-center justify-center
-             hover:scale-110 transition z-20">
-      ❯
-    </button>
+
+  <!-- ================= KONTEN PORTFOLIO ================= -->
+
+  <div class="text-center pt-12 pb-0 bg-gray-50 ">
+
+    <h1 class="bg-gray-50 text-3xl md:text-4xl font-bold text-[#19305D] relative inline-block">
+      Apa Kata Mereka?
+      <span class="block h-1 w-16 bg-gray-50 mx-auto mt-3 rounded-full"></span>
+    </h1>
 
   </div>
-</section>
+  <section class="pt-5 pb-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 flex justify-center">
 
-<!-- ================= OVERVIEW PRODUCT ================= -->
-    <div class="w-full bg-orange-500/90 py-10 px-6">
-        <!-- Header -->
-        <h1 class="text-3xl font-bold text-white mb-2">Riwayat Pengajuan</h1>
-        <p class="text-white/90 mb-6">
-            Dapatkan informasi terbaru mengenai pengajuan peminjaman yang telah diajukan sebelumnya
+      <div class="max-w-md w-full bg-white rounded-xl shadow-md p-8 
+                hover:shadow-xl transition duration-300">
+
+        <!-- Profile -->
+        <div class="flex items-center mb-4">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyqUuHt-N5MDLH6B0cq7ajY6XUELHxoiFD3z_Ox1vTBxRwkSfP01AuEUEu_zXQlPJqm-3V1VRWK0_xawSLugQJmP9UImwpxQw1OwTY9g&s=10"
+            alt="User" class="w-12 h-12 rounded-full object-cover mr-4">
+
+          <div>
+            <h4 class="font-semibold text-[#19305D]">Jokowi Duodo</h4>
+            <p class="text-sm text-gray-500">Ruang Basement</p>
+          </div>
+        </div>
+
+        <!-- Testimoni -->
+        <p class="text-gray-600 italic leading-relaxed">
+          "Pelayanan yang diberikan sangat memuaskan. Prosesnya cepat, fasilitasnya lengkap, dan suasananya
+          nyaman. Sangat direkomendasikan!"
         </p>
 
-        <!-- Card Container -->
-        <div class="bg-white shadow-lg rounded-xl p-4 flex items-center max-w-3xl">
-
-            <!-- Image -->
-            <img 
-                src="https://images.unsplash.com/photo-1581375273703-25dfaa0ba2b0?q=80&w=300" 
-                alt="ruangan" 
-                class="w-28 h-28 object-cover rounded-lg mr-4"
-            />
-
-            <!-- Info -->
-            <div class="flex-1">
-                <h2 class="text-lg font-semibold">Ruang Utama Masjid Raden Patah</h2>
-                <p class="text-gray-600 text-sm">Jumat, 20 Januari 2022</p>
-                <p class="text-gray-600 text-sm">13.30 ~ 15.00 WIB</p>
-                <p class="text-gray-500 text-sm mt-1">Izin menggunakan untuk ibadah</p>
-            </div>
-
-            <!-- Button -->
-            <button class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800">
-                Selengkapnya
-            </button>
+        <!-- Rating -->
+        <div class="flex mt-4 text-yellow-400 text-lg">
+          ★★★★★
         </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= KONTEN CONTACT US ================= -->
+  <!-- Form -->
+
+  <h1 class=" p-8 font-bold text-4xl mb-6">Lebih Dekat Dengan Kami</h1>
+
+  <form class="px-8 pt-8 pb-8 p">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <!-- First name -->
+      <div>
+        <label class="block text-xs font-semibold tracking-wide text-slate-600 mb-2">Nama Depan</label>
+        <input type="text" placeholder="Nama Depan" class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-800 placeholder-slate-400
+                            focus:outline-none focus:ring-2 focus:ring-sky-400">
+      </div>
+      <!-- Last name -->
+      <div>
+        <label class="block text-xs font-semibold tracking-wide text-slate-600 mb-2">Nama belakang</label>
+        <input type="text" placeholder="Masukkan Nama belakang" class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-800 placeholder-slate-400
+                            focus:outline-none focus:ring-2 focus:ring-sky-400 ">
+      </div>
+      <!-- Email -->
+      <div>
+        <label class="block text-xs font-semibold tracking-wide text-slate-600 mb-2">Email</label>
+        <input type="email" placeholder="Masukkan Email Anda" class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-800 placeholder-slate-400
+                            focus:outline-none focus:ring-2 focus:ring-sky-400 ">
+      </div>
+      <!-- Phone -->
+      <div>
+        <label class="block text-xs font-semibold tracking-wide text-slate-600 mb-2">Nomor Telepon</label>
+        <input type="tel" placeholder="Masukkan nomor telepon" class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-800 placeholder-slate-400
+                            focus:outline-none focus:ring-2 focus:ring-sky-400 ">
+      </div>
     </div>
 
-<!-- ================= SCRIPT ================= -->
-<script>
-  let index = 0;
-  const carousel = document.getElementById("carousel");
-  const totalSlides = 3;
+    <!-- Message -->
+    <div class="mt-5">
+      <label class="block text-xs font-semibold tracking-wide text-slate-600 mb-2">Apa Kendala yang kamu Alami</label>
+      <textarea id="message" rows="4" placeholder="Tuangkan Kendalamu" class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-800 placeholder-slate-400
+                             focus:outline-none focus:ring-2 focus:ring-sky-400 resize-y"></textarea>
+    </div>
 
-  function updateCarousel() {
-    carousel.style.transform = `translateX(-${index * 100}%)`;
-  }
+    <!-- Submit -->
+    <div class="mt-7">
+      <button type="submit" class="w-full rounded-md bg-[#19305D] text-white font-semibold py-3
+                           hover:bg-[#15284D] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400">
+        Submit
+      </button>
+    </div>
+  </form>
+  </section>
 
-  function nextSlide() {
-    index = (index + 1) % totalSlides;
-    updateCarousel();
-  }
 
-  function prevSlide() {
-    index = (index - 1 + totalSlides) % totalSlides;
-    updateCarousel();
-  }
-</script>
+
+  <!-- ================= FOOTER ================= -->
+  <div id="footer"></div>
+  <script src="../js/navbar_footer.js"></script>
+  <script src="../js/service.js"></script>
+
 
 </body>
+
+
 </html>
